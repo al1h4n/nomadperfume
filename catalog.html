@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог парфюмов</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #ddd;
+        }
+        .catalog {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            background-color: #fff;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            text-align: center;
+            padding: 10px;
+            background-color: #fff;
+            transition: transform 0.2s;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product img {
+            width: 100%;
+            height: 200px; /* Устанавливаем фиксированную высоту */
+            object-fit: cover; /* Обрезаем и центрируем изображение */
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+        .product h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .product p {
+            color: #666;
+        }
+        .product .price {
+            font-size: 1.2em;
+            color: #333;
+            margin: 10px 0;
+        }
+        .product button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .product button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="navbar-left">
+            <a href="сессия.html">Главная</a>
+            <a href="профиль.html">Профиль</a>
+            <a href="#">Корзина</a>
+            <a href="#">Акции</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="https://t.me/perfumeforu_bot">Telegram бот</a>
+        </div>
+    </div>
+
+    <div class="catalog">
+        <div class="product">
+            <img src="парфюм2.jpg" alt="Парфюм 1">
+            <h3>Jaen Paul Gaultier Le Beau Le Perfume</h3>
+            <p>Аромат Le Beau обладает особой харизмой. Особую теплоту и притягательность ему придают ноты кокоса в сочетании с более традиционными древесными нотами и свежим морским аккордом.</p>
+            <div class="price">90 000 тенге.</div>
+            <button>Купить</button>
+        </div>
+        <div class="product">
+            <img src="парфюм3.jpg" alt="Парфюм 2">
+            <h3>Dior Miss Dior Blooming Bouquet</h3>
+            <p>Dior Miss Dior Blooming Bouquet — это изысканный и нежный женский парфюм, который воплощает в себе элегантность и романтику. </p>
+            <div class="price">32 000  тенге.</div>
+            <button>Купить</button>
+        </div>
+        <div class="product">
+            <img src="парфюм4.jpg" alt="Парфюм 3">
+            <h3>Afnan 9 pm</h3>
+            <p>Это мужской парфюм, который сочетает в себе сладкие и пряные ноты, создавая соблазнительный и энергичный аромат. </p>
+            <div class="price">22 000 тенге.</div>
+            <button>Купить</button>
+        </div>
+        <div class="product">
+            <img src="парфюм5.jpg" alt="Парфюм 4">
+            <h3>Lacoste Pour Elle Sparkling</h3>
+            <p>Lacoste Pour Elle Sparkling - это женский парфюм, который воплощает в себе игривость и женственность.</p>
+            <div class="price">44 000  тенге.</div>
+            <button>Купить</button>
+        </div>
+        <div class="product">
+            <img src="парфюм7.jpg" alt="Парфюм 5">
+            <h3>Burberry for her</h3>
+            <p>Это женский парфюм, который сочетает в себе сладкие и фруктовые ноты, создавая стильный и современный аромат.</p>
+            <div class="price">26 400 тенге</div>
+            <button>Купить</button>
+        </div>
+        <div class="product">
+            <img src="парфюм6.jpg" alt="Парфюм 6">
+            <h3>Tom Ford Bitter Peach</h3>
+            <p>Это роскошный и чувственный унисекс парфюм, который славится своей интенсивной и сложной ароматической композицией.</p>
+            <div class="price">121 290 тенге</div>
+            <button>Купить</button>
+        </div>
+        <div class="product">
+            <img src="парфюм8.jpg" alt="Парфюм 7">
+            <h3>CHANEL ALLURE HOMME SPORT EAU EXTREME</h3>
+            <p>CHANEL ALLURE HOMME SPORT EAU EXTREME - это мужской парфюм, который является интенсивной версией классического аромата Chanel Allure Homme Sport</p>
+            <div class="price">50 000 тенге</div>
+            <button>Купить</button>
+        </div>
+        <div class="product">
+            <img src="парфюм9.jpg" alt="Парфюм 8">
+            <h3>Miss Dior Le Parfum Dior</h3>
+            <p>Miss Dior Le Parfum Dior — это аромат для женщин, он принадлежит к группе шипровые цветочные. Miss Dior Le Parfum выпущен в 2012 году</p>
+            <div class="price">140 000 тенге</div>
+            <button>Купить</button>
+        </div>
+        <div class="product">
+            <img src="парфюм10.jpg" alt="Парфюм 9">
+            <h3>Moschino Toy Boy</h3>
+            <p>Это мужской парфюм, который представляет собой смелый и утонченный аромат, созданный для современного и стильного мужчины. Этот аромат идеально подходит для тех, кто хочет выделиться из толпы и подчеркнуть свою индивидуальность</p>
+            <div class="price">29 000 тенге</div>
+            <button>Купить</button>
+        </div>
+        <div class="product">
+            <img src="парфюм11.jpg" alt="Парфюм 10">
+            <h3>Moschino Toy 2 Bubble Gum</h3>
+            <p>Moschino Toy 2 Bubble Gum - это женский парфюм, который отличается игривостью, сладостью и неповторимым шармом. Этот аромат воплощает в себе веселье и радость, напоминая о детстве и беззаботности</p>
+            <div class="price">38 600 тенге</div>
+            <button>Купить</button>
+        </div>
+        <div class="product">
+            <img src="парфюм12.jpg" alt="Парфюм 11">
+            <h3>Dior Homme Intense</h3>
+            <p>Dior Homme Intense - это мужской парфюм, который представляет собой современную интерпретацию классического аромата Dior Homme</p>
+            <div class="price">61 000 тенге</div>
+            <button>Купить</button>
+        </div>
+        <div class="product">
+            <img src="парфюм13.jpg" alt="Парфюм 12">
+            <h3>TO BE The Queen</h3>
+            <p>TO BE The Queen от Police - это женский парфюм, который представляет собой ароматическую композицию, воплощающую силу, элегантность и утонченность королевской природы</p>
+            <div class="price">20 000 тенге</div>
+            <button>Купить</button>
+        </div>
+        <div class="product">
+            <img src="парфюм14.jpg" alt="Парфюм 13">
+            <h3>LATTAFA Ameer Al Oudh Intense</h3>
+            <p>LATTAFA Ameer Al Oudh Intense - это унисекс парфюм, который обладает глубоким и интенсивным ароматом, насыщенным древесными и пряными нотами, создавая роскошное и загадочное впечатление</p>
+            <div class="price">14 500 тенге</div>
+            <button>Купить</button>
+        </div>
+        <div class="product">
+            <img src="парфюм15.jpg" alt="Парфюм 14">
+            <h3> I Am Juicy Couture Juicy Couture</h3>
+            <p> I Am Juicy Couture Juicy Couture - это женский парфюм, который воплощает в себе яркость, энергию и современный стиль американского бренда</p>
+            <div class="price">155 000 тенге</div>
+            <button>Купить</button>
+        </div>
+        <div class="product">
+            <img src="парфюм17.jpg" alt="Парфюм 15">
+            <h3>Jean Paul Gaultie La Belle Paradise Garden</h3>
+            <p>Jean Paul Gaultie La Belle Paradise Garden - Лазурные изгибы La Belle Paradise Garden элегантно украшены ожерельем из вышитых цветов, отсылающих к коллекции Модного Дома сезона осень-зима 2010-2011. Она само воплощение женственности!</p>
+            <div class="price">80 000 тенге</div>
+            <button>Купить</button>
+        </div>
+        <div class="product">
+            <img src="парфюм16.jpg" alt="Парфюм 16">
+            <h3>Jaen Paul Gaultier Paradise Garden</h3>
+            <p>Le Beau Paradise Garden природного зелёного оттенка, излучающего тропическое сияние, едва прикрыт яркими вышитыми листьями, которые отсылают к коллекции Модного Дома Jean Paul Gaultier сезона осень-зима 2010-2011</p>
+            <div class="price">72 500 тенге</div>
+            <button>Купить</button>
+        </div>
+        <div class="product">
+            <img src="парфюм18.jpg" alt="Парфюм 17">
+            <h3>Creed Aventus</h3>
+            <p>Creed Aventus - это икона в мире мужских парфюмерных композиций, обладающая беспрецедентной популярностью и статусом классики</p>
+            <div class="price">185 000 тенге</div>
+            <button>Купить</button>
+        </div>
+        <div class="product">
+            <img src="парфюм19.jpg" alt="Парфюм 18">
+            <h3>La Collection Yvresse Yves Saint Laurent </h3>
+            <p>La Collection Yvresse Yves Saint Laurent - представляет собой серию ароматов, в которых переосмысляется классический аромат Yvresse, олицетворяющий роскошь и элегантность</p>
+            <div class="price">19 500 тенге</div>
+            <button>Купить</button>
+        </div>
+        <div class="product">
+            <img src="парфюм20.jpg" alt="Парфюм 19">
+            <h3>Rasasi Hawas</h3>
+            <p>Rasasi Hawas - это мужской парфюм, который отличается своей яркостью, энергичностью и экзотичностью. Этот аромат создан для современных мужчин, которые стремятся подчеркнуть свою индивидуальность и харизму</p>
+            <div class="price">30 500 тенге</div>
+            <button>Купить</button>
+        </div>
+        <div class="product">
+            <img src="парфюм21.jpg" alt="Парфюм 20">
+            <h3>Lattafa Ana Abiyedh Leather</h3>
+            <p>Lattafa Ana Abiyedh Leather - это унисекс парфюм, который отличается богатым и смелым кожаным ароматом с восточными и древесными акцентами. Этот аромат создан для тех, кто ищет уникальность и силу в парфюмерии</p>
+            <div class="price">41 990 тенге</div>
+            <button>Купить</button>
+        </div>
+        <div class="product">
+            <img src="парфюм22.jpg" alt="Парфюм 21">
+            <h3>Tom Ford Mandarino di Amalfi </h3>
+            <p>Tom Ford Mandarino di Amalfi - это унисекс парфюм, который захватывает свежестью и яркостью средиземноморского лета, воплощая в себе волшебство итальянского побережья Амальфи. Этот аромат создан для тех, кто ищет чистоту и энергию в парфюмерии</p>
+            <div class="price">220 000 тенге</div>
+            <button>Купить</button>
+        </div>
+    </div>
+
+</body>
+</html>

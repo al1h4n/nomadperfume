@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль пользователя</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .navbar {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #ddd;
+        }
+        .profile {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile h1 {
+            text-align: center;
+        }
+        .profile p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+        .purchase-history {
+            margin-top: 30px;
+        }
+        .purchase-history h2 {
+            margin-bottom: 15px;
+        }
+        .purchase-history ul {
+            list-style: none;
+            padding: 0;
+        }
+        .purchase-history li {
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .balance {
+            margin-top: 30px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f4f4f4;
+        }
+        .balance p {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="navbar-left">
+            <a href="сессия.html">Главная</a>
+            <a href="#">Корзина</a>
+            <a href="#">Акции</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="https://t.me/perfumeforu_bot">Telegram бот</a>
+        </div>
+    </div>
+
+    <div class="profile">
+        <h1>Профиль пользователя</h1>
+        <p>Имя: Алан Иксанов</p>
+        <p>Email: alaaan@gmail.com</p>
+        <p>Телефон: +7 777 456 7890</p>
+        <p>Адрес: ул. *******, дом 1, кв. 1, г. Алматы</p>
+        
+        <div class="purchase-history">
+            <h2>История покупок</h2>
+            <ul>
+                <li>
+                    <p>Товар: Dior Miss Dior Blooming Bouquet</p>
+                    <p>Дата: 20.05.2024</p>
+                    <p>Сумма: 32 000 тенге</p>
+                </li>
+                <li>
+                    <p>Товар: Tom Ford Bitter Peach</p>
+                    <p>Дата: 10.04.2024</p>
+                    <p>Сумма: 121 290 тенге</p>
+                </li>
+                <li>
+                    <p>Товар: Lacoste Pour Elle Sparkling</p>
+                    <p>Дата: 05.03.2024</p>
+                    <p>Сумма: 44 000 тенге</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="balance">
+            <p>Баланс: 50 000 тенге</p>
+        </div>
+    </div>
+
+</body>
+</html>
+
